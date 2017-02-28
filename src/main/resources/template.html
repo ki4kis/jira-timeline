@@ -22,7 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.17.0/vis.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.17.0/vis.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body onresize="/*timeline.checkResize();*/">
 <div id="visualization"></div>
 
 <script>
@@ -32,6 +32,11 @@
   var container = document.getElementById('visualization');
 
   var options = {
+    stack: true,
+    maxHeight: 800,
+    horizontalScroll: true,
+    verticalScroll: true,
+    zoomKey: "ctrlKey",
     start: $startDate,
     editable: false,
     order: function(a, b) { return a.id - b.id }

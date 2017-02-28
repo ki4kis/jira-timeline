@@ -1,8 +1,12 @@
+import com.github.retronym.SbtOneJar
+
 name := "jira-timeline"
 
 version := "1.0"
 
 scalaVersion := "2.12.0"
+
+SbtOneJar.oneJarSettings
 
 libraryDependencies ++= Seq(
   "com.typesafe" % "config" % "1.3.1",
