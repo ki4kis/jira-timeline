@@ -1,0 +1,10 @@
+.idea/
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/target/
+.history
+.cache
+application.conf
+/*.html
